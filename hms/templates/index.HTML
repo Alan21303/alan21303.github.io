@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chronic Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chronic Disease Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="symptoms">Enter symptoms (comma-separated):</label>
+            <input type="text" name="symptoms" id="symptoms" placeholder="e.g., Symptom1, Symptom2, Symptom3" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Symptoms entered: {{ symptoms }}</p>
+    <p>Random Forest Model Prediction: {{ predictions.rf_model_prediction }}</p>
+    <p>Naive Bayes Model Prediction: {{ predictions.naive_bayes_prediction }}</p>
+    <p>SVM Model Prediction: {{ predictions.svm_model_prediction }}</p>
+    <p>Final Prediction: {{ predictions.final_prediction }}</p>
+    <a href="/">Back to Input</a>
+</body>
+</html>
